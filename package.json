@@ -1,0 +1,18 @@
+{
+  "name": "advcash_wrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "vladisslaww <vladisslaww@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "axios-debug": "^0.0.4",
+    "js-sha256": "^0.9.0",
+    "lodash": "^4.17.11",
+    "query-string": "^6.2.0"
+  }
+}
