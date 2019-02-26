@@ -18,6 +18,7 @@ module.exports = class Client
         Authorization: "",
         date: "",
         host: 'baas_test.talkbank.io',
+        'Content-Type': 'application/json'
       },
     };
   }
@@ -56,7 +57,7 @@ module.exports = class Client
       data = JSON.stringify(data);
       config.data = data;
     }
-
+    console.log(config.data)
 
     config.method = method;
     config.headers.date = new Date().toUTCString();
