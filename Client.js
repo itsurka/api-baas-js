@@ -57,7 +57,6 @@ module.exports = class Client
       data = JSON.stringify(data);
       config.data = data;
     }
-    console.log(config.data)
 
     config.method = method;
     config.headers.date = new Date().toUTCString();
@@ -121,7 +120,7 @@ module.exports = class Client
 
   // Virtual card
   createVirtualCard (clientId) {
-    const data = {client_id: clientId}
+    const data = {client_id: clientId};
     return this.createRequest(`/clients/${clientId}/virtual-cards`,'POST', data);
   }
 
